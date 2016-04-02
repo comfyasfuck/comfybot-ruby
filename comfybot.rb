@@ -68,7 +68,7 @@ bot = Cinch::Bot.new do
 
   on :message, ":info" do |m|
     unless is_ignored?(m.user)
-      m.reply "I'm comfybot, comfy's bot. You probs can't do much rn cuz ur not a comrade, comrade."
+      m.reply "I'm comfybot, comfy's bot. " + Format(:bold, :teal, "https://github.com/comfyasfuck/comfybot-ruby")
       m.reply "If you wanna b a comrade, ask comrade comfy. Do " + Format(:bold, :blue, ":comrades") + " to see the list."
     end
   end
