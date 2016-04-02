@@ -62,7 +62,7 @@ bot = Cinch::Bot.new do
 
   on :message, ".bots" do |m|
     unless is_ignored?(m.user)
-      m.reply "Reporting in! [Ruby] Do " + Format(:bold, :purple, ":info") + " for cool stuff."
+      m.reply "Reporting in! [" + Format(:red, "Ruby") + "] Do " + Format(:bold, :purple, ":info") + " for cool stuff."
     end
   end
 
